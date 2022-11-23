@@ -21,6 +21,10 @@ h6 {
   line-height: 0.4rem;
 }
 
+.link {
+  text-decoration: none;
+}
+
 /* ==== elements ======  */
 
 /* feed */
@@ -86,6 +90,26 @@ h6 {
   height: 12rem;
   background-size: cover;
   background-position: center;
+}
+
+/* offers */
+
+.offers-card {
+  height: 10rem;
+  background-size: cover;
+  overflow: hidden;
+  background-position: center;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.offers-card p,
+.offers-card h6 {
+  color: #eee;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 }
 
 /* discover  */
@@ -471,20 +495,64 @@ label[data-shrink="false"]
 
 /* ======== Hotels  */
 
-.hotels {
-  display: flex;
-}
 
 .search-results {
   display: flex;
   padding: 5rem 7%;
+  -webkit-text-stroke: #fff;
+  justify-content: center;
 }
 
 .sidebar {
-  padding: rem 0;
-  width: 100%;
-  max-width: 400px;
+  /* width: 100%; */
+  /* max-width: 400px; */
   background-color: #eee;
-  height: 100%;
-  min-height: 88vh;
+  /* height: 100%; */
+  /* min-height: 88vh; */
+  /* position: fixed; */
+}
+
+.empty-search {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  opacity: 30%;
+  padding-top: 10%;
+}
+.css-h93ljk-MuiTypography-root {
+  font-size: 1em !important;
+  font-weight: 700 !important;
+}
+
+/* ====== header  */
+/*  video */
+
+#background-video {
+  width: 100%;
+  height: 25rem;
+  object-fit: cover;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+}
+.header-text {
+  font-weight: bolder;
+  text-shadow: 0 0 2px #1f1212;
+  color: #eee;
+}
+
+/* ======== Sign in  */
+
+.css-14s5rfu-MuiFormLabel-root-MuiInputLabel-root {
+  font-size: 0.85em !important;
+}
+
+/* ======== SignUp */
+.css-md26zr-MuiInputBase-root-MuiOutlinedInput-root {
+  padding: 10px 14px !important;
 }
